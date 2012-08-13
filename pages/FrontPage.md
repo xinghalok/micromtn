@@ -15,7 +15,7 @@ Keeping it real, coding, digging it.
 **Coding eh?**
 <br>
 No doubt! Scala, Python, and Javascript are my lingua franca.
-I just finished up a <a href="http://drablab.org/imp-projects.shtml">research internship</a> and my web app has entered double-secret-incubation mode.
+I just finished up a <a href="http://drablab.org/imp-projects.shtml">research internship</a> and released a web app: <a href="http://bit.ly/O5b2jU">ExploreMore</a>.
 <br>
 **Neato burrito! What else have you been up to?**
 <br>

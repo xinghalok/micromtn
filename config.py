@@ -7,8 +7,8 @@ DEBUG = True
 
 # ARTICLE AND PAGE CONFIGURATION
 
-ARTICLE_DIR = 'articles/'
-PAGES_DIR = 'pages/'
+ARTICLE_DIR = '/var/www/micromtn/articles/'
+PAGES_DIR = '/var/www/micromtn/pages/'
 
 # NAVBAR CONFIGURATION
 # Add navbar links with dict(title="Title", url="URL)
