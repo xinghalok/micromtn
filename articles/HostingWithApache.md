@@ -22,7 +22,7 @@ Log in to your EC2 instance (Usually done through an SSH connection) and type th
 
 This installs our webserver, Apache2, as well as a Python WSGI module. Don't worry if you do not know what a "WSGI module" is right now; you can learn about it <a href="http://code.google.com/p/modwsgi/">here</a>. Essentially what it does is hand over  Python's built-in webserver duties to Apache.
 
-If your point yourself to your EC2 domain (either the DNS address you used to connect to your server via SSH or a URL you have pointed towards it), you will see a welcoming message from our good, if homely friend, the Apache webserver. Lets get your Python app on there. 
+If you point yourself to your EC2 domain (either the DNS address you used to connect to your server via SSH or a URL you have pointed towards it), you will see a welcoming message from our good, if homely friend, the Apache webserver. Lets get your Python app on there. 
 
 Type the following:
 
@@ -66,13 +66,13 @@ Then all that is left do is disable the Apache default page and enable your Flas
 
     sudo a2dissite default
     sudo a2ensite sitename.com
-    sudo service apache restart
+    sudo /etc/init.d/apache2 restart
 
-Now if you navigate to your page, you should see your Flask app up and running. Congrats. That took about 10 minutes, I hope. Of course, this just barely scratches the surface of the power and flexibility of apache2 and mod_wsgi, but those are topics you and I will <a href="http://sleepy-headland-2831.herokuapp.com/">exploring more</a> as we go on to build bigger web apps.
+Now if you navigate to your page, you should see your Flask app up and running. Congrats. That took about 10 minutes, I hope. Of course, this just barely scratches the surface of the power and flexibility of apache2 and mod_wsgi, but those are topics you and I will be <a href="http://sleepy-headland-2831.herokuapp.com/">exploring more</a> as we go on to build bigger web apps.
 
 The beauty of this approach is not only that it is fast and relatively painless (I could write a shell script that would make this a 10 second process...hmmm), but it is also quite modular. Simply rinse and repeat these steps for individual apps and you can switch between them using a2dissite and a2ensite. If you have more than one URL redirecting to the EC2 instance, you can configure Apache2 to serve each one by way of creating unique sitename.com configs as done above.
 
-If you have any questions, be sure to email me at me.anzuoni at gmail dot com.
+If you have any questions, be sure to email me at me.anzuoni at gmail dot com or hit me up on my Twitter, <a href="https://twitter.com/SexyUlysses">@SexyUlysses</a>.
 
 
 
